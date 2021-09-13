@@ -13,3 +13,7 @@ Testcases are available in file _ComputerDB-Testcases.xlsx_ and via [Google Shee
 ## Run tests on local machine
 
 > npm run test
+
+## Experiments
+
+-   [Github Actions](https://github.com/msbhikhe/comp-db-cy/actions)
