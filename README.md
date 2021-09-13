@@ -16,4 +16,17 @@ Testcases are available in file _ComputerDB-Testcases.xlsx_ and via [Google Shee
 
 ## Experiments
 
--   [Github Actions](https://github.com/msbhikhe/comp-db-cy/actions)
+### Github Actions
+
+https://github.com/msbhikhe/comp-db-cy/actions
+
+### Mochawesome Report
+
+A sample report is zipped in the project. Alternatively, steps to generate report on local machine:
+
+-   Delete following files/folders
+    -   cypress/reports/\*
+    -   mocha\*
+-   Run tests
+-   Run npm script _generate-report_
+-   Check HTML report in mochawesome-report folder
