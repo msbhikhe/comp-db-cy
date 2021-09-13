@@ -1,14 +1,20 @@
 {
-  "name": "comp-db-cy",
-  "version": "1.0.0",
-  "description": "Test repository for computer database",
-  "scripts": {
-    "test": "npx cypress run"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cypress": "^8.3.1",
-    "moment": "^2.29.1"
-  }
+    "name": "comp-db-cy",
+    "version": "1.0.0",
+    "description": "Test repository for computer database",
+    "scripts": {
+        "test": "npx cypress run",
+        "merge": "npx mochawesome-merge cypress/reports/results/*.json > mochawesome.json",
+        "generate-report": "npm run merge && wait-on mochawesome.json && npx marge mochawesome.json"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cypress": "^8.3.1",
+        "mochawesome": "^6.2.2",
+        "mochawesome-merge": "^4.2.0",
+        "mochawesome-report-generator": "^5.2.0",
+        "moment": "^2.29.1",
+        "wait-on": "^6.0.0"
+    }
 }
